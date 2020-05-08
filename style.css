@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.aim{
+    position: absolute;
+    left: 77%;
+    top: -35px;
+}
+.gun{
+    position: absolute;
+    bottom: 42%;
+    left: -3%;
+}
+.gun img{
+    height: 80px;
+    width: auto;
+}
+.aim img{
+    height: 80px;
+    width: auto;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-size: 40px;
+
+}
+header p{
+    font-size: 20px;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+}
+
+.pads {
+    background: red;
+    width: 100%;
+    display: flex;
+}
+.pads > div {
+    height: 100px;
+    height: 100px;
+    flex: 1;
+    
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: bold;
+}
+.pad1{
+    background: #60d394;
+}
+.pad2{
+    background: #d36060;
+}
+.pad3{
+    background: #c060d3;
+}
+.pad4{
+    background: #d3d160;
+}
+.pad5{
+    background: #6860d3;
+}
+.pad6{
+    background: #60d3b6;
+}
+
+
+
+/* annimation code */
+@keyframes jump{
+
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+@keyframes shoot{
+    0%{
+        bottom: 50%;
+        left: 0%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 100%;
+        left: 80%;
+        transform: rotate(-40deg);
+    }
+
+}
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
+.visual > img {
+    position: absolute;
+    bottom: 50%;
+    left: -10%;
+    width: auto;
+    height: 40px;
+}
